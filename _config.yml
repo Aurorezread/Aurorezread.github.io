@@ -117,5 +117,5 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: git@github.com:Aurorezread/Ji-Nian.github.io.git  #你的仓库地址
+  repository: https://github.com/Aurorezread/Aurorezread.github.io #你的仓库地址
   branch: master #绑定的仓库分支
