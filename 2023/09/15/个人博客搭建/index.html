@@ -1,0 +1,328 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><script src="/js/snow3.js"></script><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hexo快速搭建 | 极念</title><meta name="author" content="极念"><meta name="copyright" content="极念"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Hexo是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。即把用户的markdown文件，按照指定的主题解析成静态网页。——白嫖的总是最好的，单是基于静态网页布置（如果需要搞个性域名的话另说），以及个性化主题的配置，我感觉用hexo+github+node.js是比较不错的，代码工具的话vscode和webSt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo快速搭建">
+<meta property="og:url" content="http://example.com/2023/09/15/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.html">
+<meta property="og:site_name" content="极念">
+<meta property="og:description" content="Hexo是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。即把用户的markdown文件，按照指定的主题解析成静态网页。——白嫖的总是最好的，单是基于静态网页布置（如果需要搞个性域名的话另说），以及个性化主题的配置，我感觉用hexo+github+node.js是比较不错的，代码工具的话vscode和webSt">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/home5.webp">
+<meta property="article:published_time" content="2023-09-15T01:33:31.000Z">
+<meta property="article:modified_time" content="2023-09-15T08:54:33.938Z">
+<meta property="article:author" content="极念">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/home5.webp"><link rel="shortcut icon" href="/img/boy.jpg"><link rel="canonical" href="http://example.com/2023/09/15/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":500,"languages":{"author":"作者: 极念","link":"链接: ","source":"来源: 极念","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo快速搭建',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-09-15 16:54:33'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/mystyle.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (true) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }
+})()</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/loading.gif" data-original="/img/Pok%C3%A9mon.jpeg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/myPhoto/"><i class="fa-fw fas fa-images"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/timeline/"><i class="fa-fw fa fa-bell"></i><span> 日志</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/%E5%85%B3%E4%BA%8E"><i class="fa-fw /about/"></i><span> 0</span></a></li><li><a class="site-page child" href="/myself"><i class="fa-fw /myself/"></i><span> 1</span></a></li><li><a class="site-page child" href="/butterfly%E4%B8%BB%E9%A2%98"><i class="fa-fw https://github.com/jerryc127/hexo-theme-butterfly/"></i><span> 2</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/home5.webp')"><nav id="nav"><span id="blog-info"><a href="/" title="极念"><span class="site-name">极念</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/myPhoto/"><i class="fa-fw fas fa-images"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/timeline/"><i class="fa-fw fa fa-bell"></i><span> 日志</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/%E5%85%B3%E4%BA%8E"><i class="fa-fw /about/"></i><span> 0</span></a></li><li><a class="site-page child" href="/myself"><i class="fa-fw /myself/"></i><span> 1</span></a></li><li><a class="site-page child" href="/butterfly%E4%B8%BB%E9%A2%98"><i class="fa-fw https://github.com/jerryc127/hexo-theme-butterfly/"></i><span> 2</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Hexo快速搭建</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-09-15T01:33:31.000Z" title="发表于 2023-09-15 09:33:31">2023-09-15</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-09-15T08:54:33.938Z" title="更新于 2023-09-15 16:54:33">2023-09-15</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>7分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Hexo快速搭建"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p><strong>Hexo是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。即把用户的markdown文件，按照指定的主题解析成静态网页。</strong><br><em>——白嫖的总是最好的，单是基于静态网页布置（如果需要搞个性域名的话另说），以及个性化主题的配置，我感觉用hexo+github+node.js是比较不错的，代码工具的话vscode和webStorm都可以</em>。</p>
+</blockquote>
+<p>废话不多说，我这里只是简单的一个搭建，有兴趣的话可以从网上查找大神们的各种配置自己进行搭配。</p>
+<p>下面开始 &gt;&gt;&gt;</p>
+<h2 id="1-安装Node-js和git"><a href="#1-安装Node-js和git" class="headerlink" title="1.安装Node.js和git"></a>1.安装Node.js和git</h2><p>这一步（git需要调整镜像源，我是用淘宝的），自行找官网安装即可，一般做程序员的话基本都已经具备了。</p>
+<h2 id="2-安装Hexo"><a href="#2-安装Hexo" class="headerlink" title="2.安装Hexo"></a>2.安装Hexo</h2><p>   选择一个磁盘，创建文件夹（这个就是Blogs的本地目录了）</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">---------------------</span><br><span class="line">因为我是mac的。所以要在前面添加权限命令 sudo</span><br><span class="line">- 然后操作的话也是将文件夹啦到vscode中进行命令操作的</span><br><span class="line">- windows版本，进入文件夹中，右键 git bash here,并粘贴代码回车运行</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-1-初始化本地Blogs"><a href="#2-1-初始化本地Blogs" class="headerlink" title="2.1 初始化本地Blogs"></a>2.1 初始化本地Blogs</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo init 你博客的文件夹名</span><br><span class="line">cd 文件夹名/   #进入你的文件夹根目录</span><br><span class="line">npm install  #安装依赖</span><br></pre></td></tr></table></figure>
+
+<p>等待运行完成，此时文件夹中多了许多文件， 此时 Hexo 框架的本地搭建已经完成了</p>
+<p>运行<strong>hexo s</strong> 启动本地服务器，用于预览主题。 默认地址：<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a></p>
+<h3 id="2-2-配置gitHub远程仓库"><a href="#2-2-配置gitHub远程仓库" class="headerlink" title="2.2 配置gitHub远程仓库"></a>2.2 配置gitHub远程仓库</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span>、初始化本地仓库：</span><br><span class="line">git init</span><br><span class="line"><span class="number">2</span>、连接远程仓库：</span><br><span class="line">如果是第一次使用git，在使用git的时候会提示输入用户名和密码，用户名是自己的注册邮箱。</span><br><span class="line">git remote add origin <span class="attr">https</span>:<span class="comment">//github.com/wapchief/wapchief.github.io.git</span></span><br><span class="line"><span class="number">3</span>、发布hexo到github page</span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br><span class="line"><span class="number">4</span>、添加文件到本地仓库</span><br><span class="line">git add</span><br><span class="line"><span class="number">5</span>、提交声明</span><br><span class="line">git commit -m <span class="string">&#x27;内容&#x27;</span></span><br><span class="line"><span class="number">6</span>、推送到远程仓库（github）</span><br><span class="line">————————————————</span><br><span class="line"># 这里的注意点就是必须要把仓库名设置为用户名</span><br><span class="line"># 必须以 账号名.<span class="property">github</span>.<span class="property">io</span> 进行设置</span><br></pre></td></tr></table></figure>
+<!-- ![在这里插入图片描述](https://img-blog.csdnimg.cn/fe864f21fabc4ae692a2a99334a60acb.png) -->
+
+
+
+<h2 id="3-hexo的命令介绍"><a href="#3-hexo的命令介绍" class="headerlink" title="3.hexo的命令介绍"></a>3.hexo的命令介绍</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo s # hexo server 的缩写，命令效果一致</span><br><span class="line">hexo server -p <span class="number">5000</span> # 指定端口号运行</span><br><span class="line">--------------</span><br><span class="line">预览的同时可以修改文章内容或主题代码，保存后刷新页面即可</span><br><span class="line">对 <span class="title class_">Hexo</span> 根目录 _config.<span class="property">yml</span> 的修改，需要重启本地服务器后才能预览效果</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">&#x27;文章名&#x27;</span></span><br><span class="line">--------------</span><br><span class="line">新建文章，文章标题可以在对应 md 文件里改，新建时标题可以写的简单些</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo d # hexo deploy 的缩写，命令效果一致</span><br><span class="line">--------------</span><br><span class="line">自动生成网站静态文件，并部署到设定的仓库</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo clean # 清除缓存文件 db.<span class="property">json</span> 和已生成的静态文件 public </span><br><span class="line">-------------</span><br><span class="line">网站显示异常时可以执行这条命令试试,可以解决一些灵异的bug</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo g # hexo generate 的缩写，命令效果一致</span><br><span class="line">-------------</span><br><span class="line">生成网站静态文件到默认设置的 public 文件夹</span><br><span class="line">- 便于查看网站生成的静态文件或者手动部署网站；</span><br><span class="line">- 如果使用自动部署，不需要先执行该命令；</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> page 页面名 # 新建一个标题为***的页面，默认链接地址为 主页地址/页面名/</span><br><span class="line">-------------</span><br><span class="line">标题可以为中文，但一般习惯用英文；</span><br><span class="line">页面标题和文章一样可以随意修改；</span><br><span class="line">页面不会出现在首页文章列表和归档中，也不支持设置分类和标签。</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-配置Hexo"><a href="#4-配置Hexo" class="headerlink" title="4.配置Hexo"></a>4.配置Hexo</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Hexo</span>的结构目录</span><br><span class="line">---------------------------</span><br><span class="line">├── .<span class="property">deploy</span>          #部署文件夹</span><br><span class="line">├── public           #html源码，hexo g生成</span><br><span class="line">├── scaffolds        #模板</span><br><span class="line">├── scripts          #扩展脚本</span><br><span class="line">├── source           #文章源码</span><br><span class="line">|   ├── _drafts      #草稿</span><br><span class="line">|   └── _posts       #文章</span><br><span class="line">├── themes           #主题</span><br><span class="line">|   ├── butterfly    #butterfly主题</span><br><span class="line">├── _config.<span class="property">yml</span>      #博客配置</span><br><span class="line">└── package.<span class="property">json</span>     #应用程序数据</span><br></pre></td></tr></table></figure>
+
+<p>当我们安装完毕的时候，就需要对Hexo进行一些配置，具体是通过<code>_config.yml</code>文件来完成的</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"># <span class="title class_">Site</span></span><br><span class="line"><span class="attr">title</span>: 网站标题</span><br><span class="line"><span class="attr">subtitle</span>: 副标题</span><br><span class="line"><span class="attr">description</span>: 个人签名</span><br><span class="line"><span class="attr">author</span>: 姓名</span><br><span class="line"><span class="attr">language</span>: zh-<span class="title class_">Hans</span></span><br><span class="line"><span class="attr">timezone</span>:</span><br><span class="line">-----------</span><br><span class="line"><span class="number">1</span>、 所有的配置“:”符号后面都要带空格，否则执行本地测试直接失败。</span><br><span class="line"><span class="number">2</span>、language是设置语言。zh-<span class="title class_">Hans</span>是中文。</span><br><span class="line"><span class="number">3</span>、如果设置zh-<span class="title class_">Hans</span>后仍出现乱码问题。需要更改文件的字符编码集为<span class="variable constant_">UTF</span>-<span class="number">8</span>,方法很多具体，就不详细介绍了。</span><br></pre></td></tr></table></figure>
+
+<p>根目录_config.yml中配置自己的远程仓库地址</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"># <span class="title class_">Deployment</span></span><br><span class="line">## <span class="title class_">Docs</span>: <span class="attr">https</span>:<span class="comment">//hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy</span>:</span><br><span class="line">  <span class="attr">type</span>: git</span><br><span class="line">  <span class="attr">repository</span>: git@github.<span class="property">com</span>:<span class="title class_">Aurorezread</span>/<span class="title class_">Ji</span>-<span class="title class_">Nian</span>.<span class="property">github</span>.<span class="property">io</span>.<span class="property">git</span>  #你的仓库地址</span><br><span class="line">  <span class="attr">branch</span>: master #绑定的仓库分支</span><br><span class="line">  -----------</span><br><span class="line">    我直接用ssh进行的绑定，想来会比https方便许多</span><br></pre></td></tr></table></figure>
+
+<p>根目录_config.yml中配置配置主题  &gt;&gt;&gt; 在博客的根目录下执行以下命令</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">git clone -b master <span class="attr">https</span>:<span class="comment">//github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly</span></span><br><span class="line"># 下载 pug 以及 stylus 的渲染器，否则在项目运行时会报错</span><br><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br><span class="line"># 修改项目根目录下的_config.<span class="property">yml</span>文件（称为站点配置文件），开启主题</span><br><span class="line"># <span class="title class_">Extensions</span></span><br><span class="line">## <span class="title class_">Plugins</span>: <span class="attr">https</span>:<span class="comment">//hexo.io/plugins/</span></span><br><span class="line">## <span class="title class_">Themes</span>: <span class="attr">https</span>:<span class="comment">//hexo.io/themes/</span></span><br><span class="line"><span class="attr">theme</span>: butterfly  # 主题样式有很多。这是我配置的，可以找一个自己喜欢的</span><br></pre></td></tr></table></figure>
+
+<h3 id="导航栏配置"><a href="#导航栏配置" class="headerlink" title="导航栏配置"></a><strong>导航栏配置</strong></h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu</span>:</span><br><span class="line">  首页: / || fa fa-home</span><br><span class="line">  归档: <span class="regexp">/archives/</span> || fa fa-archive</span><br><span class="line">  标签: <span class="regexp">/tags/</span> || fa fa-tags</span><br><span class="line">  分类: <span class="regexp">/categories/</span> || fa fa-folder-open</span><br><span class="line">  留言板: <span class="regexp">/messageboard/</span> || fa fa-paper-plane</span><br><span class="line">  友链: <span class="regexp">/link/</span> || fa fa-link</span><br><span class="line">  日志: <span class="regexp">/timeline/</span> || fa fa-bell</span><br><span class="line">  菜单 || fa fa-<span class="attr">list</span>:</span><br><span class="line">    - about || <span class="regexp">/about/</span> || fa fa-sitemap</span><br><span class="line">    - myself || <span class="regexp">/myself/</span> || fa fa-id-card</span><br><span class="line">    - butterfly || <span class="attr">https</span>:<span class="comment">//github.com/jerryc127/hexo-theme-butterfly/ || fa fa-heart</span></span><br><span class="line">————————————————</span><br><span class="line">利用命令 hexo <span class="keyword">new</span> page archives  # 创建归档文件夹（以此为例）</span><br></pre></td></tr></table></figure>
+
+<p><strong>导航栏配置</strong> — 详细</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"># 修改：source/tags/index.<span class="property">md</span></span><br><span class="line">---</span><br><span class="line"><span class="attr">title</span>: 标签</span><br><span class="line"><span class="attr">date</span>: <span class="number">2022</span>-<span class="number">07</span>-<span class="number">30</span> <span class="number">08</span>:<span class="number">45</span>:<span class="number">06</span></span><br><span class="line"><span class="attr">type</span>: tags</span><br><span class="line">---</span><br><span class="line"># 以后上传文章的md文件中，可以在标题头中加入tags，包含 标签 文章的例子：</span><br><span class="line">---</span><br><span class="line"><span class="attr">title</span>: 学习 java 这一篇就够了</span><br><span class="line"><span class="attr">tag</span>: </span><br><span class="line">  - 后端</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 分类</span><br><span class="line">---</span><br><span class="line"><span class="attr">title</span>: 分类</span><br><span class="line"><span class="attr">date</span>: <span class="number">2022</span>-<span class="number">07</span>-<span class="number">30</span> <span class="number">08</span>:<span class="number">54</span>:<span class="number">29</span></span><br><span class="line"><span class="attr">type</span>: categories</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"># 留言板</span><br><span class="line">---</span><br><span class="line"><span class="attr">title</span>: 留言板</span><br><span class="line"><span class="attr">date</span>: <span class="number">2022</span>-<span class="number">07</span>-<span class="number">30</span> <span class="number">08</span>:<span class="number">58</span>:<span class="number">20</span></span><br><span class="line"><span class="attr">type</span>: messageboard</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"># 友链</span><br><span class="line">---</span><br><span class="line"><span class="attr">title</span>: 友链</span><br><span class="line"><span class="attr">date</span>: <span class="number">2022</span>-<span class="number">07</span>-<span class="number">30</span> <span class="number">09</span>:<span class="number">00</span>:<span class="number">05</span></span><br><span class="line"><span class="attr">type</span>: link</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"># 日志</span><br><span class="line">---</span><br><span class="line"><span class="attr">title</span>: 日志</span><br><span class="line"><span class="attr">date</span>: <span class="number">2022</span>-<span class="number">07</span>-<span class="number">30</span> <span class="number">09</span>:<span class="number">02</span>:<span class="number">25</span></span><br><span class="line"><span class="attr">type</span>: timeline</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"># 关于</span><br><span class="line">---</span><br><span class="line"><span class="attr">title</span>: <span class="title class_">This</span> is me</span><br><span class="line"><span class="attr">date</span>: <span class="number">2022</span>-<span class="number">07</span>-<span class="number">30</span> <span class="number">09</span>:<span class="number">04</span>:<span class="number">02</span></span><br><span class="line"><span class="attr">type</span>: myself</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+
+
+<p>**副标题配置 **&gt;&gt;&gt; 修改 bufferfly下的 _config.yml</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="attr">subtitle</span>:</span><br><span class="line">  <span class="attr">enable</span>: <span class="literal">true</span></span><br><span class="line">  # <span class="title class_">Typewriter</span> <span class="title class_">Effect</span> (开启打字效果)</span><br><span class="line">  <span class="attr">effect</span>: <span class="literal">true</span></span><br><span class="line">  # loop (循環打字)</span><br><span class="line">  <span class="attr">loop</span>: <span class="literal">true</span></span><br><span class="line">  # source調用第三方服務</span><br><span class="line">  # <span class="attr">source</span>: <span class="literal">false</span> 關閉調用</span><br><span class="line">  # <span class="attr">source</span>: <span class="number">1</span>  調用搏天api的隨機語錄（簡體）</span><br><span class="line">  # <span class="attr">source</span>: <span class="number">2</span>  調用一言網的一句話（簡體）</span><br><span class="line">  # <span class="attr">source</span>: <span class="number">3</span>  調用一句網（簡體）</span><br><span class="line">  # <span class="attr">source</span>: <span class="number">4</span>  調用今日詩詞（簡體）</span><br><span class="line">  # subtitle 會先顯示 source , 再顯示 sub 的內容</span><br><span class="line">  <span class="attr">source</span>: <span class="literal">false</span></span><br><span class="line">  # 如果有英文逗号<span class="string">&#x27; , &#x27;</span>,请使用转义字元 &amp;#<span class="number">44</span>;</span><br><span class="line">  # 如果有英文双引号<span class="string">&#x27; &quot; &#x27;</span>,请使用转义字元 &amp;quot;</span><br><span class="line">  # 开头不允許转义字元，如需要，请把整個句子用双引号包住</span><br><span class="line">  # 如果关闭打字效果，subtitle只会现示sub的第一行文字</span><br><span class="line">  <span class="attr">sub</span>:</span><br><span class="line">    - 你在抱怨什么呢</span><br><span class="line">    - 为明天到来的事，说人生像是没有意义</span><br><span class="line">    - 没有选择会是唯一的路</span><br><span class="line">    - 这不是你自己的问题，人终归要好好去生活</span><br><span class="line">————————————————</span><br><span class="line">副标题字体大小颜色</span><br><span class="line">在\themes\butterfly\source\css_layout中的head.<span class="property">styl</span>:中修改</span><br></pre></td></tr></table></figure>
+
+<p><strong>图片设置</strong></p>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="http://pic.netbian.com/4kdongman/index_2.html">http://pic.netbian.com/4kdongman/index_2.html</a> 送你个图片地址</p>
+</li>
+<li><p>图片可以用云图片链接或者放在本地文件夹位置：&#x2F;themes&#x2F;butterfly&#x2F;source&#x2F;img.以下代码在主题的配置文件中修改</p>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"># <span class="title class_">Favicon</span>（网站图标）</span><br><span class="line"><span class="attr">favicon</span>: <span class="regexp">/img/</span>favicon.<span class="property">png</span></span><br><span class="line"></span><br><span class="line"># 头像</span><br><span class="line"><span class="attr">avatar</span>:</span><br><span class="line">  <span class="attr">img</span>: <span class="regexp">/img/</span>avatar.<span class="property">jpg</span> #图片路径</span><br><span class="line">  <span class="attr">effect</span>: <span class="literal">false</span> #头像会一直转圈</span><br><span class="line">  </span><br><span class="line"># 主页封面图片</span><br><span class="line"># <span class="title class_">The</span> banner image <span class="keyword">of</span> home page</span><br><span class="line"><span class="attr">index_img</span>: <span class="regexp">/img/</span>background.<span class="property">jpg</span></span><br><span class="line"></span><br><span class="line"># 文章详情页的顶部图片</span><br><span class="line"># 当没有在front-matter设置top_img和cover的情况下会显示该图</span><br><span class="line"># <span class="title class_">If</span> the banner <span class="keyword">of</span> page not setting, it will show the top_img</span><br><span class="line"><span class="attr">default_top_img</span>: <span class="regexp">/img/</span>default_top_img.<span class="property">jpg</span> #我设置的本地图片</span><br><span class="line"></span><br><span class="line"># 文章封面</span><br><span class="line"># 篇文章都可以设置一张封面，可以为每篇文章设置默认封面</span><br><span class="line">也可以修改每个md文件的front-matter的cover属性，会覆盖上面的默认封面。</span><br><span class="line"><span class="attr">cover</span>:</span><br><span class="line">  <span class="attr">index_enable</span>: <span class="literal">true</span> #  是否展示文章封面</span><br><span class="line">  <span class="attr">aside_enable</span>: <span class="literal">true</span></span><br><span class="line">  <span class="attr">archives_enable</span>: <span class="literal">true</span></span><br><span class="line">  <span class="attr">position</span>: both # 封面展示的位置 left/right/both</span><br><span class="line">  # 当没有设置cover时，默认展示的文章封面</span><br><span class="line">  <span class="attr">default_cover</span>:</span><br><span class="line">    # 当配置多张图片时，会随机选择一张作为 cover. 此时写法为</span><br><span class="line">    - <span class="attr">https</span>:</span><br><span class="line">    - <span class="attr">http</span>:</span><br><span class="line">    - <span class="attr">http</span>:</span><br><span class="line">    - <span class="attr">http</span>:</span><br><span class="line">    - <span class="attr">http</span>:</span><br><span class="line">    - <span class="attr">http</span>:</span><br></pre></td></tr></table></figure>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">极念</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2023/09/15/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">http://example.com/2023/09/15/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://github.com/Aurorezread/Ji-Nian.github.io.git" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">极念</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/home5.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/09/15/%E6%96%B0%E6%89%8B+%E7%9A%84Git/" title="新手+的Git"><img class="cover" src="/img/loading.gif" data-original="/img/home5.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">新手+的Git</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/loading.gif" data-original="/img/Pok%C3%A9mon.jpeg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">极念</div><div class="author-info__description">内心湛然，则无往而不乐</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://blog.csdn.net/mjh1667002013" target="_blank" title="CSDN"><i class="fa fa-book-open"></i></a><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=728831102&amp;website=www.oicqzone.com" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="mailto:453473190@qq.com" target="_blank" title="Email"><i class="fas fa-envelope-open-text"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%AE%89%E8%A3%85Node-js%E5%92%8Cgit"><span class="toc-number">1.</span> <span class="toc-text">1.安装Node.js和git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85Hexo"><span class="toc-number">2.</span> <span class="toc-text">2.安装Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E5%88%9D%E5%A7%8B%E5%8C%96%E6%9C%AC%E5%9C%B0Blogs"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 初始化本地Blogs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E9%85%8D%E7%BD%AEgitHub%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 配置gitHub远程仓库</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-hexo%E7%9A%84%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D"><span class="toc-number">3.</span> <span class="toc-text">3.hexo的命令介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%85%8D%E7%BD%AEHexo"><span class="toc-number">4.</span> <span class="toc-text">4.配置Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%85%8D%E7%BD%AE"><span class="toc-number">4.1.</span> <span class="toc-text">导航栏配置</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/09/15/websocket%E7%9A%84%E5%88%9D%E6%AD%A5%E4%BD%BF%E7%94%A8/" title="websocket的初步使用"><img src="/img/loading.gif" data-original="/img/home5.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="websocket的初步使用"/></a><div class="content"><a class="title" href="/2023/09/15/websocket%E7%9A%84%E5%88%9D%E6%AD%A5%E4%BD%BF%E7%94%A8/" title="websocket的初步使用">websocket的初步使用</a><time datetime="2023-09-15T08:59:06.000Z" title="发表于 2023-09-15 16:59:06">2023-09-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/09/15/%E6%94%BE%E5%A4%A7%E9%95%9C%E5%AE%9E%E7%8E%B0/" title="放大镜实现"><img src="/img/loading.gif" data-original="/img/home5.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="放大镜实现"/></a><div class="content"><a class="title" href="/2023/09/15/%E6%94%BE%E5%A4%A7%E9%95%9C%E5%AE%9E%E7%8E%B0/" title="放大镜实现">放大镜实现</a><time datetime="2023-09-15T07:33:31.000Z" title="发表于 2023-09-15 15:33:31">2023-09-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/09/15/%E6%96%B0%E6%89%8B+%E7%9A%84Git/" title="新手+的Git"><img src="/img/loading.gif" data-original="/img/home5.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="新手+的Git"/></a><div class="content"><a class="title" href="/2023/09/15/%E6%96%B0%E6%89%8B+%E7%9A%84Git/" title="新手+的Git">新手+的Git</a><time datetime="2023-09-15T03:33:31.000Z" title="发表于 2023-09-15 11:33:31">2023-09-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/09/15/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" title="Hexo快速搭建"><img src="/img/loading.gif" data-original="/img/home5.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hexo快速搭建"/></a><div class="content"><a class="title" href="/2023/09/15/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" title="Hexo快速搭建">Hexo快速搭建</a><time datetime="2023-09-15T01:33:31.000Z" title="发表于 2023-09-15 09:33:31">2023-09-15</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/home5.webp')"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By 极念</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat-btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div>
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(r){r.imageLazyLoadSetting.processImages=t;var e=r.imageLazyLoadSetting.isSPA,n=r.imageLazyLoadSetting.preloadRatio||1,c=a();function a(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){e&&(c=a());for(var t,o=0;o<c.length;o++)0<=(t=(t=c[o]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(r.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,n,a,i=c[o];e=function(){c=c.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(n=new Image,a=t.getAttribute("data-original"),n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a))}()}function i(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",i),r.addEventListener("resize",i),r.addEventListener("orientationchange",i)}(this);</script></body></html>
