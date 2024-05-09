@@ -1,1 +1,1 @@
-var posts=["2023/09/15/websocket的初步使用/","2023/09/15/个人博客搭建/","2023/09/15/新手+的Git/","2023/09/15/放大镜实现/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
+var posts=["2023/09/15/websocket的初步使用/","2023/09/15/放大镜实现/","2023/09/15/个人博客搭建/","2023/09/15/新手+的Git/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
